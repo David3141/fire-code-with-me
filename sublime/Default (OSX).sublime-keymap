@@ -1,0 +1,9 @@
+[
+  { "keys": ["ctrl+right"], "command": "next_view_in_stack" },
+  { "keys": ["ctrl+left"], "command": "prev_view_in_stack" },
+  { "keys": ["super+ctrl+left"], "command": "focus_neighboring_group" },
+  { "keys": ["super+ctrl+right"], "command": "focus_neighboring_group", "args": {"forward": false} },
+  { "keys": ["super+alt+left"], "command": "jump_back" },
+  { "keys": ["super+alt+right"], "command": "goto_definition" },
+  { "keys": ["super+ctrl+a"], "command": "alignment" }
+]

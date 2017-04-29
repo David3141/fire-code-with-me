@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"Auto Close HTML Tags",
+		"Babel",
+		"Color Highlighter",
+		"ColorPicker",
+		"CSS3",
+		"Duplicate Lines",
+		"Emmet",
+		"Enki Theme",
+		"Git blame",
+		"GitGutter",
+		"gruvbox",
+		"Javascript Beautify",
+		"Markdown Preview",
+		"Package Control",
+		"React ES6 Snippets",
+		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"TrailingSpaces",
+		"Twig"
+	]
+}
