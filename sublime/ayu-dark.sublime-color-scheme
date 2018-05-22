@@ -1,0 +1,19 @@
+{
+    "rules": [
+        {
+            "name": "Italic Keywords",
+            "scope": "keyword.control",
+            "font_style": "italic"
+        },
+        {
+            "name": "Italic Constants + Class etc",
+            "scope": "storage.type",
+            "font_style": "italic"
+        },
+        {
+            "name": "Italic Comments",
+            "scope": "comment",
+            "font_style": "italic"
+        }
+    ]
+}
