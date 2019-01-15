@@ -1,21 +1,61 @@
 {
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		".vscode/**",
+		"dist/**",
+		"node_modules/**",
+		"yarn.lock"
+	],
+	"caret_style": "phase",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"coverage",
+		"CVS",
+		"tmp"
+	],
 	"font_options": [
 		"subpixel_antialias"
 	],
-	"font_size": 13,
+	"font_face": "IBM Plex Mono",
+	"font_options":
+	[
+		"gray_antialias"
+	],
+	"font_size": 12,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"open_files_in_new_window": false,
 	"rulers":
 	[
 		100
 	],
 	"scroll_past_end": true,
+	"shift_tab_unindent": true,
 	"tab_size": 2,
 	"theme": "ayu-dark.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": "false"
 }
