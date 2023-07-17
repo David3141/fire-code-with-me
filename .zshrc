@@ -25,7 +25,7 @@ autoload -Uz compinit && compinit # don't know exactly what is is, but enables t
 # prompt
 
 branch_name() {
- ref=$(git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f3)
+ ref=$(git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f3,4,5)
  echo $ref
 }
 
