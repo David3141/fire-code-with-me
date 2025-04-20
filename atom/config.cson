@@ -20,7 +20,7 @@
       "ariake-dark-syntax"
     ]
   editor:
-    fontSize: 15
+    fontSize: 14
     preferredLineLength: 99
     scrollPastEnd: true
   "exception-reporting":
