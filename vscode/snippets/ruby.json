@@ -1,0 +1,49 @@
+{
+	"pry debugger": {
+		"prefix": "pry",
+		"body": "binding.pry",
+		"description": "add binding.pry"
+	},
+
+	"do ... end": {
+		"prefix": "do",
+		"body": [
+			"do",
+			"  $0",
+			"end"
+		],
+		"description": "Insert do...end block"
+	},
+
+	"context (rspec)": {
+		"prefix": "context",
+		"body": [
+			"context '$1' do",
+			"  $0",
+			"end"
+		],
+		"description": "Insert an RSpec context"
+	},
+
+	"subject (rspec)": {
+		"prefix": "subject",
+		"body": "subject { $0 }",
+		"description": "Insert a subject one-liner"
+	},
+
+	"let(:...) { ... }": {
+		"prefix": "let",
+		"body": "let(:$1) { $0 }",
+		"description": "Insert let ..."
+	},
+
+	"it '...' do ... end": {
+		"prefix": "it",
+		"body": [
+			"it '$1' do",
+			"  $0",
+			"end"
+		],
+		"description": "Insert an rspec spec"
+	}
+}
