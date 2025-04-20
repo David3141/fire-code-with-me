@@ -41,16 +41,8 @@
     "command": "workbench.action.openEditorAtIndex9"
   },
   {
-    "key": "ctrl+cmd+right",
-    "command": "workbench.action.focusSecondEditorGroup"
-  },
-  {
     "key": "cmd+2",
     "command": "-workbench.action.focusSecondEditorGroup"
-  },
-  {
-    "key": "ctrl+cmd+left",
-    "command": "workbench.action.focusFirstEditorGroup"
   },
   {
     "key": "cmd+1",
@@ -121,7 +113,8 @@
   {
     "key": "ctrl+-",
     "command": "-workbench.action.navigateBack"
-  },{
+  },
+  {
     "key": "ctrl+shift+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
@@ -146,5 +139,91 @@
   {
     "key": "alt+cmd+left",
     "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+cmd+down",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+down",
+    "command": "-workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+cmd+up",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+up",
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "alt+down",
+    "command": "cursorMove",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 10
+    }
+  },
+  {
+    "key": "alt+up",
+    "command": "cursorMove",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 10
+    }
+  },
+  {
+    "key": "alt+shift+down",
+    "command": "cursorMove",
+    "args": {
+      "select": true,
+      "to": "down",
+      "by": "line",
+      "value": 10
+    }
+  },
+  {
+    "key": "alt+shift+up",
+    "command": "cursorMove",
+    "args": {
+      "select": true,
+      "to": "up",
+      "by": "line",
+      "value": 10
+    }
   }
 ]
