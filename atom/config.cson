@@ -1,0 +1,37 @@
+"*":
+  "atom-beautify":
+    ejs:
+      indent_size: 2
+    general:
+      _analyticsUserId: "b62be9c2-89f0-4820-a291-c10983c59ad2"
+    js:
+      indent_size: 2
+    jsx:
+      indent_size: 2
+  "atom-material-ui":
+    colors:
+      abaseColor: "#a132c2"
+      accentColor: "#b0e457"
+      predefinedColor: "Purple"
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "ariake-dark-syntax"
+    ]
+  editor:
+    fontSize: 15
+    preferredLineLength: 99
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "eb3451d5-4569-4d5b-9fb3-721e99159032"
+  "git-diff":
+    showIconsInEditorGutter: true
+  linter:
+    lintPreviewTabs: false
+  "linter-jshint":
+    executablePath: "/usr/local/bin/jshint"
+  pigments:
+    markerType: "native-dot"
+  welcome:
+    showOnStartup: false
