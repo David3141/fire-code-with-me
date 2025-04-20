@@ -1,0 +1,25 @@
+{
+	"auto_complete_with_fields": true,
+	"color_scheme": "Packages/Enki Theme/scheme/Enki.tmTheme",
+	"detect_indentation": false,
+	"enki_theme_accent_red": true,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Menlo",
+	"font_options":
+	[
+		"gray_antialias",
+		"subpixel_antialias"
+	],
+	"font_size": 16,
+	"ignored_packages":
+	[
+		"CSS",
+		"Vintage"
+	],
+	"index_files": false,
+	"scroll_past_end": true,
+	"tab_size": 2,
+	"theme": "Enki-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
