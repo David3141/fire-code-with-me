@@ -1,0 +1,11 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+[
+  {
+    "label": "Go to test",
+    // Maybe there's a way to scope tasks, so ruby projects could make the lookup in the /spec folder only
+    "command": "ag -g \"$ZED_STEM.*(spec|test)\" | sed -n 1p | xargs zed",
+    "use_new_terminal": true,
+    "reveal": "never",
+    "hide": "always"
+  }
+]
