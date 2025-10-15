@@ -13,9 +13,10 @@
     }
   },
   {
-    "context": "vim_mode == normal || vim_mode == visual",
+    "context": "EmptyPane || vim_mode == normal || vim_mode == visual",
     "bindings": {
       "space f f": "file_finder::Toggle",
+      "space c a": "editor::ToggleCodeActions",
       "space s g": "pane::DeploySearch",
       "s": ["vim::PushSneak", {}],
       "S": ["vim::PushSneakBackward", {}]
@@ -29,4 +30,3 @@
     }
   }
 ]
-
