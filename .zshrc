@@ -8,6 +8,7 @@ alias gp='git push'
 alias gss='git status -s'
 alias gst='git status'
 
+alias gg='lazygit'
 
 # History
 
