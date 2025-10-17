@@ -9,20 +9,30 @@ alias gss='git status -s'
 alias gst='git status'
 
 
-# history
+# History
 
 HISTSIZE=100000
 SAVEHIST=100000
 HISTFILE=~/.zsh_history
 
+setopt append_history         # append to the history file, don't clobber it on exit
+setopt inc_append_history     # write each command to the history file as it's executed
+setopt share_history          # share history across all running zsh sessions
+setopt hist_ignore_all_dups   # remove older duplicate entries when a command is re-run
+setopt hist_reduce_blanks     # strip extra blanks in commands before saving (helps duplicates rule)
+setopt hist_expire_dups_first # when trimming history, expire duplicates before unique entries
+setopt hist_verify            # when using history expansion (!), put the command on the prompt for editing
 
-# autocompletion
 
-setopt prompt_subst # allow command substitution in prompt
-autoload -Uz compinit && compinit # don't know exactly what is is, but enables tab selections
+# Zsh Autocompletion
+
+setopt prompt_subst                                    # allow command substitution in prompt
+autoload -Uz compinit && compinit                      # load and initialize autocompletion
+zstyle ':completion:*' menu select                     # make tab selections interactive
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case-insensitive completion
 
 
-# prompt
+# Prompt
 
 branch_name() {
  ref=$(git symbolic-ref HEAD 2>/dev/null | cut -d'/' -f3,4,5)
@@ -36,40 +46,8 @@ git_status() {
 }
 
 PROMPT=' %1~ %F{cyan}$(branch_name) %F{magenta}$(git_status)%f '
-# PROMPT='%-50<..<%~%<<> ' # leave 50 characters left for input
 
 
-# tab selections
-
-zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-
-
-# retain current working directory in new tab
-precmd () {print -Pn "\e]2; %~/ \a"}
-preexec () {print -Pn "\e]2; %~/ \a"}
-
-
-# Let pkg-config know about openssl for `crystal play` to work
-# export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig
-
-# defaults
-# defaults write .GlobalPreferences com.apple.scrollwheel.scaling -1
-# revert with: defaults delete .GlobalPreferences com.apple.scrollwheel.scaling
-
-# add haskell or stack packages to PATH
-# path+=~/.local/bin
-
-# add postgresql to path
-# path+=/Applications/Postgres.app/Contents/Versions/latest/bin
-
-# fzf
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# GHCUP
-# source /Users/david/.ghcup/env
-
-# rbenv
-# eval "$(rbenv init -)"
-
-# [ -f "/Users/david/.ghcup/env" ] && source "/Users/david/.ghcup/env" # ghcup-env
+# Tools
+source <(fzf --zsh)
+eval "$(mise activate zsh)"
